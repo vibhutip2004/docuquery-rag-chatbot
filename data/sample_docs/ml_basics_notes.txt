@@ -1,0 +1,38 @@
+Machine Learning Basics - Sample Notes
+=====================================
+
+Supervised Learning
+-------------------
+Supervised learning is a type of machine learning where the model is trained on
+labeled data. Each training example consists of an input and a known output (label).
+The goal is to learn a mapping from inputs to outputs so the model can predict labels
+for new, unseen data. Common algorithms include Linear Regression, Logistic Regression,
+Decision Trees, Random Forests, and Support Vector Machines (SVM).
+
+Unsupervised Learning
+---------------------
+Unsupervised learning deals with unlabeled data. The model tries to find hidden
+patterns or structure in the data. Common tasks include clustering (K-Means,
+hierarchical clustering) and dimensionality reduction (PCA, t-SNE).
+
+Neural Networks and Transformers
+--------------------------------
+A neural network is a stack of layers of interconnected nodes (neurons) that learn
+weights via backpropagation. Transformers, introduced in the paper "Attention Is All
+You Need" (2017), replace recurrence with self-attention, allowing the model to weigh
+the importance of different tokens in a sequence. This architecture powers modern
+LLMs like GPT and BERT.
+
+Tokenization and Embeddings
+---------------------------
+Tokenization splits text into smaller units called tokens (words, subwords or
+characters). Embeddings convert tokens into dense numerical vectors that capture
+semantic meaning, so similar words or sentences end up close together in vector space.
+This property is what enables semantic search in vector databases like FAISS and
+ChromaDB.
+
+Evaluation Metrics
+------------------
+Classification models are evaluated using accuracy, precision, recall, and F1-score.
+Regression models use Mean Squared Error (MSE) and R-squared. It is important to use
+a separate test set to measure generalization.
